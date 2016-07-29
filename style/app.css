@@ -1,0 +1,25 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#navbar {
+    width: 100%;
+    height: 40px;
+    background-color: #080808;
+    border-bottom: solid 1px #9e379f;
+}
+
+#brand {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2em;
+    color: #493267;
+    margin-left: 5px;
+}
+
+#game {
+    width: 100%;
+    height: calc(100% - 41px);
+}
