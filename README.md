@@ -9,8 +9,9 @@ The goal is to script the best agent AI to get maximum benefits.
 
 ## Tech
 
+- [Playground.js](http://playgroundjs.com) (gameloop & inputs)
 - Entity Component System
-- Data Driven
+- Data Driven system
 - Simple API for AI scripts (engine agnostics)
 
 ## Roadmap
