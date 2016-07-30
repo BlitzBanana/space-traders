@@ -20,4 +20,12 @@ The goal is to script the best agent AI to get maximum benefits.
 - [ ] Validate the Data Driven architecture
 - [ ] Implement the AI scripts system
 - [ ] Implement map loading
-- [ ] Make a map editor
+- [ ] Make a simple map editor
+
+## Ideas for the future
+
+- Big map & jump engines
+- Multi agent control
+- Buy and manage stations
+- Police & illegal wares
+- Pirates
