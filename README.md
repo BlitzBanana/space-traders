@@ -7,9 +7,14 @@ My goal is to make a space game where there are some stations of different types
 There are also some 'agents' who travel between stations to buy and sell some wares.
 The goal is to script the best agent AI to get maximum benefits.
 
+## Getting started
+
+- Run `npm install && npm start`
+
 ## Tech
 
-- [Playground.js](http://playgroundjs.com) (gameloop & inputs)
+- [Electron](https://github.com/electron/electron)
+- [Playground.js](https://github.com/rezoner/playground) (gameloop & inputs)
 - Entity Component System
 - Data Driven system
 - Simple API for AI scripts (engine agnostics)
