@@ -18,6 +18,8 @@ The goal is to script the best agent AI to get maximum benefits.
 
 - [ ] Finish the Entity Component System implementation
 - [ ] Validate the Data Driven architecture
+- [ ] Improve inputs handling (system based)
+- [ ] Improve camera (zoom support)
 - [ ] Implement the AI scripts system
 - [ ] Implement map loading
 - [ ] Make a simple map editor
