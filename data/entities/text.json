@@ -1,4 +1,7 @@
 {
-    "name": "text",
-    "components": ["position", "text"]
+  "name": "text",
+  "components": [
+    "position",
+    "text"
+  ]
 }

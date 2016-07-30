@@ -1,26 +1,29 @@
 {
-    "name": "shipyard",
-    "components": ["position", "appearence"],
-    "config": {
-        "appearence": {
-            "points": [
-                {
-                    "x": -10,
-                    "y": 10
-                },
-                {
-                    "x": -10,
-                    "y": -10
-                },
-                {
-                    "x": 10,
-                    "y": -10
-                },
-                {
-                    "x": 10,
-                    "y": 10
-                }
-            ]
+  "name": "shipyard",
+  "components": [
+    "position",
+    "appearence"
+  ],
+  "config": {
+    "appearence": {
+      "points": [
+        {
+          "x": -10,
+          "y": 10
+        },
+        {
+          "x": -10,
+          "y": -10
+        },
+        {
+          "x": 10,
+          "y": -10
+        },
+        {
+          "x": 10,
+          "y": 10
         }
+      ]
     }
+  }
 }

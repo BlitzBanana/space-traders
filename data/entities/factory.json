@@ -1,42 +1,48 @@
 {
-    "name": "factory",
-    "components": ["position", "appearence"],
-    "config": {
-        "appearence": {
-            "color": "#e86af0",
-            "points": [
-                {
-                    "x": -10,
-                    "y": 10
-                },
-                {
-                    "x": -10,
-                    "y": -10
-                },
-                {
-                    "x": 10,
-                    "y": -10
-                },
-                {
-                    "x": 10,
-                    "y": 10
-                }
-            ]
-        }
-    },
-    "children": [
+  "name": "factory",
+  "components": [
+    "position",
+    "appearence"
+  ],
+  "config": {
+    "appearence": {
+      "color": "#e86af0",
+      "points": [
         {
-            "components": ["position", "text"],
-            "config": {
-                "text": {
-                    "content": "FACTORY",
-                    "color": "#e86af0"
-                },
-                "position": {
-                    "x": -28,
-                    "y": -15
-                }
-            }
+          "x": -10,
+          "y": 10
+        },
+        {
+          "x": -10,
+          "y": -10
+        },
+        {
+          "x": 10,
+          "y": -10
+        },
+        {
+          "x": 10,
+          "y": 10
         }
-    ]
+      ]
+    }
+  },
+  "children": [
+    {
+      "components": [
+        "position",
+        "text"
+      ],
+      "config": {
+        "text": {
+          "content": "FACTORY",
+          "color": "#e86af0"
+        },
+        "position": {
+          "x": -28,
+          "y": -15
+        }
+      }
+    }
+  ]
 }
