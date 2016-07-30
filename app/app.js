@@ -1,7 +1,7 @@
 const {ipcRenderer} = require('electron');
-var PLAYGROUND = require('../libs/playground/playground');
+const PLAYGROUND = require('../libs/playground/playground');
 
-var ECS = require('./core/ecs');
+const ECS = require('./core/ecs');
 require('./core/systems/render');
 require('./core/systems/textrender');
 
@@ -13,14 +13,10 @@ ipcRenderer.sendSync('list-dir', `${__dirname}/../data/entities`).forEach(entity
   ECS.entities.fromJson(require(`../data/entities/${entityFile}`));
 });
 
-var camera = ECS.entities.spawn(['position']);
-var lastMousePosition = { x: 0, y: 0 };
+let camera = ECS.entities.spawn(['position']);
+let lastMousePosition = { x: 0, y: 0 };
 
-var app = new PLAYGROUND.Application({
-
-  width: document.getElementById('game').clientWidth,
-
-  height: document.getElementById('game').clientHeight,
+const app = new PLAYGROUND.Application({
 
   create: function() {
     ECS.entities.spawnPrefab('factory', ECS.world, {

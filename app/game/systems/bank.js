@@ -1,10 +1,10 @@
-var _ = require('lodash');
-var ECS = require('../../core/ecs');
+const _ = require('lodash');
+const ECS = require('../../core/ecs');
 
-var transactionsManager = {
+const transactionsManager = {
   pending: [],
   addTransaction: function (transaction) {
-    var valid = this.isValid(transaction) && this.isLegal(transaction);
+    let valid = this.isValid(transaction) && this.isLegal(transaction);
     if (valid) this.pending.push(transaction);
     return valid;
   },
@@ -15,12 +15,12 @@ var transactionsManager = {
     return true;
   },
   process: function (entities) {
-    var pending = this.pending;
+    const pending = this.pending;
     this.pending = [];
     _.reverse(pending)
       .forEach(t => {
-        var emitter = _.find(entities, { id: t.emitter });
-        var recipient = _.find(entities, { id: t.recipient });
+        let emitter = _.find(entities, { id: t.emitter });
+        let recipient = _.find(entities, { id: t.recipient });
         if (t.value) {
           emitter.components.bankaccount.value -= t.value;
           recipient.components.bankaccount.value += t.value;

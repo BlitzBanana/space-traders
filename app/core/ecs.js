@@ -1,8 +1,8 @@
-var ECS = {};
-var id = 0;
-var Entity = require('./entity');
-var _ = require('lodash');
-var mirrorKey = require('mirrorkey');
+const Entity = require('./entity');
+const _ = require('lodash');
+const mirrorKey = require('mirrorkey');
+let ECS = {};
+let id = 0;
 
 /* ID generator */
 ECS.id = () => ++id;
@@ -102,7 +102,7 @@ ECS.entities.spawn = function (components, parent, config = {}) {
  * Destroy an entity and all it's children
  */
 ECS.entities.destroy = function (entityId) {
-  var entity = ECS.world.getChildById(entityId);
+  let entity = ECS.world.getChildById(entityId);
   delete entity.parent.children[entityId];
   _.keys(entity.children).forEach(childId => ECS.entities.destroy(childId));
 };
@@ -124,12 +124,12 @@ ECS.components.fromJson = function (json) {
 /**
  * Defines a system
  */
-ECS.systems.define = function (name, type, components, handler, priority) {
+ECS.systems.define = function (name, type, components, handler, priority = 0) {
   ECS.systems.definitions[name] = {
-    type: type || ECS.systems.type.UPDATE,
-    components: components || [],
-    handler: handler || function () { },
-    priority: priority || 0
+    type: type,
+    components: components,
+    handler: handler,
+    priority: priority
   };
 };
 

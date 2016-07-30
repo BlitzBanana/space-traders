@@ -1,8 +1,8 @@
-var UTILS = {};
+let UTILS = {};
 
 UTILS.getAbsolutePosition = function (entity) {
-  var parentPosition;
-  var entityPosition;
+  let parentPosition;
+  let entityPosition;
 
   if (entity.parent) {
     parentPosition = UTILS.getAbsolutePosition(entity.parent);

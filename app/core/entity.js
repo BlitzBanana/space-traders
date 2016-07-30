@@ -1,5 +1,5 @@
-var _ = require('lodash');
-var Entity = (function () {
+const _ = require('lodash');
+const Entity = (function () {
   'use strict';
 
   function Entity(id) {

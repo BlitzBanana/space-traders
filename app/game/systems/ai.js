@@ -1,7 +1,7 @@
-var _ = require('lodash');
-var ECS = require('../../core/ecs');
+const _ = require('lodash');
+const ECS = require('../../core/ecs');
 
-var aiManager = {
+const aiManager = {
 
   scriptify: function (entity) {
     // Return transformed entity to get an engine agnostic state of it (must be read-only)

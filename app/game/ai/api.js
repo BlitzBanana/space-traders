@@ -1,4 +1,4 @@
-var API = {};
+let API = {};
 
 API.getFor = function(entity) {};
 

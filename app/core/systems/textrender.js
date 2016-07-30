@@ -1,10 +1,10 @@
-var ECS = require('../ecs');
-var UTILS = require('../utils');
+const ECS = require('../ecs');
+const UTILS = require('../utils');
 
 ECS.systems.define('textrender', ECS.systems.type.RENDER, ['position', 'text'], function (entities, context, camera) {
   entities.forEach(e => {
-    var position = UTILS.getAbsolutePosition(e);
-    var text = e.components.text;
+    const position = UTILS.getAbsolutePosition(e);
+    const text = e.components.text;
 
     context.fillStyle = text.color;
     context.font = text.font;
