@@ -1,21 +1,26 @@
+const {ipcRenderer} = require('electron');
 var PLAYGROUND = require('../libs/playground/playground');
 
 var ECS = require('./core/ecs');
 require('./core/systems/render');
 require('./core/systems/textrender');
 
-ECS.components.fromJson(require('../data/components/position'));
-ECS.components.fromJson(require('../data/components/appearence'));
-ECS.components.fromJson(require('../data/components/text'));
+ipcRenderer.sendSync('list-dir', `${__dirname}/../data/components`).forEach(componentFile => {
+  ECS.components.fromJson(require(`../data/components/${componentFile}`));
+});
 
-ECS.entities.fromJson(require('../data/entities/text'));
-ECS.entities.fromJson(require('../data/entities/factory'));
-
+ipcRenderer.sendSync('list-dir', `${__dirname}/../data/entities`).forEach(entityFile => {
+  ECS.entities.fromJson(require(`../data/entities/${entityFile}`));
+});
 
 var camera = ECS.entities.spawn(['position']);
 var lastMousePosition = { x: 0, y: 0 };
 
 var app = new PLAYGROUND.Application({
+
+  width: document.getElementById('game').clientWidth,
+
+  height: document.getElementById('game').clientHeight,
 
   create: function() {
     ECS.entities.spawnPrefab('factory', ECS.world, {
@@ -23,7 +28,13 @@ var app = new PLAYGROUND.Application({
         x: 300,
         y: 300
       }
-    })
+    });
+    ECS.entities.spawnPrefab('agent', ECS.world, {
+      position: {
+        x: 500,
+        y: 350
+      }
+    });
   },
 
   step: function(delta) {

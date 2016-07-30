@@ -1,6 +1,8 @@
 const electron = require('electron');
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
+const ipcMain = electron.ipcMain;
+const fs = require('fs');
 
 let mainWindow;
 
@@ -29,3 +31,7 @@ app.on('activate', function () {
     createWindow();
   }
 });
+
+ipcMain.on('list-dir', (event, arg) => {
+  event.returnValue = fs.readdirSync(arg);
+})

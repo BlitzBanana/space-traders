@@ -1,6 +1,6 @@
 {
     "name": "factory",
-    "components": [ "position", "appearence" ],
+    "components": ["position", "appearence"],
     "config": {
         "appearence": {
             "color": "#e86af0",
@@ -26,10 +26,10 @@
     },
     "children": [
         {
-            "components": [ "position", "text" ],
+            "components": ["position", "text"],
             "config": {
                 "text": {
-                    "content": "FACTORY", // how to config this from entity.spawnPrefab()?
+                    "content": "FACTORY",
                     "color": "#e86af0"
                 },
                 "position": {

@@ -32,7 +32,7 @@ var transactionsManager = {
     }
 };
 
-ECS.systems.define('bank', ECS.systems.types.UPDATE, ['cargohold', 'bankaccount'], function(entities, delta) {
+ECS.systems.define('bank', ECS.systems.type.UPDATE, ['cargohold', 'bankaccount'], function(entities, delta) {
     entities.forEach(e => {
         e.components.bankaccount.transactions.forEach(transaction => {
             transactionsManager.addTransaction(transaction);

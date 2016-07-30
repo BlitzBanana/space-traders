@@ -7,4 +7,8 @@ function update(me, context, api, delta) {
 
 }
 
-module.exports = update;
+function onMessage(message, sender, me) {
+
+}
+
+module.exports = { update, onMesage };

@@ -1,0 +1,51 @@
+{
+    "name": "agent",
+    "components": ["position", "appearence"],
+    "config": {
+        "appearence": {
+            "color": "#326ada",
+            "points": [
+                {
+                    "x": 0,
+                    "y": 5
+                },
+                {
+                    "x": -5,
+                    "y": -5
+                },
+                {
+                    "x": 5,
+                    "y": -5
+                }
+            ]
+        }
+    },
+    "children": [
+        {
+            "components": ["position", "text"],
+            "config": {
+                "text": {
+                    "content": "AGENT",
+                    "color": "#326ada"
+                },
+                "position": {
+                    "x": -22,
+                    "y": -18
+                }
+            }
+        },
+        {
+            "components": ["position", "text"],
+            "config": {
+                "text": {
+                    "content": "(Inexperimented)",
+                    "color": "#1E3F82"
+                },
+                "position": {
+                    "x": -46,
+                    "y": -8
+                }
+            }
+        }
+    ]
+}

@@ -1,6 +1,6 @@
 {
     "name": "shipyard",
-    "components": [ "position", "appearence" ],
+    "components": ["position", "appearence"],
     "config": {
         "appearence": {
             "points": [

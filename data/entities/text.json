@@ -1,4 +1,4 @@
 {
     "name": "text",
-    "components": [ "position", "text" ]
+    "components": ["position", "text"]
 }

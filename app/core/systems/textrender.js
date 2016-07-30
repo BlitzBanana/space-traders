@@ -1,7 +1,7 @@
 var ECS = require('../ecs');
 var UTILS = require('../utils');
 
-ECS.systems.define('textrender', ECS.systems.types.RENDER, ['position', 'text'], function(entities, context, camera) {
+ECS.systems.define('textrender', ECS.systems.type.RENDER, ['position', 'text'], function(entities, context, camera) {
     entities.forEach(e => {
         var position = UTILS.getAbsolutePosition(e);
         var text = e.components.text;
