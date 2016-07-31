@@ -25,6 +25,7 @@ The goal is to script the best agent AI to get maximum benefits.
   - [ ] Rework systems (not only a function, filter entites itself)
   - [ ] Entities family (used as filters by systems)
   - [ ] Signals/Events system to allow systems to interact each other
+  - [ ] Allow to add/remove entites' components at run time
 - [ ] Validate the Data Driven architecture
 - [ ] Improve inputs handling (system based)
 - [ ] Improve camera (zoom support)
