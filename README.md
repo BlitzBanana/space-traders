@@ -35,7 +35,7 @@ The goal is to script the best agent AI to get maximum benefits.
 
 ## Ideas for the future
 
-- Big map & jump engines
+- Big map splitted in sectors, linked by jumpgates
 - Multi agent control
 - Buy and manage stations
 - Police & illegal wares
