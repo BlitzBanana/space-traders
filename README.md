@@ -33,7 +33,7 @@ The goal is to script the best agent AI to get maximum benefits.
 - [ ] Implement map loading
 - [ ] Make a simple map editor
 
-## Ideas for the future
+## Future
 
 - Big map splitted in sectors, linked by jumpgates
 - Multi agent control
