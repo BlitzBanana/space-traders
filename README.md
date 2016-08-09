@@ -40,5 +40,3 @@ The goal is to script the best agent AI to get maximum benefits.
 - Buy and manage stations
 - Police & illegal wares
 - Pirates
-
-Inspired by X3 TC© EGOSOFT
