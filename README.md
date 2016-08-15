@@ -15,17 +15,13 @@ The goal is to script the best agent AI to get maximum benefits.
 
 - [Electron](https://github.com/electron/electron)
 - [Playground.js](https://github.com/rezoner/playground) (gameloop & inputs)
-- Entity Component System
-- Data Driven system
+- Entity Component
 - Simple API for AI scripts (engine agnostics)
 
 ## Roadmap
 
-- [ ] Finish the Entity Component System implementation
-  - [ ] Rework systems (not only a function, filter entites itself)
-  - [ ] Entities family (used as filters by systems)
-  - [ ] Signals/Events system to allow systems to interact each other
-  - [ ] Allow to add/remove entites' components at run time
+- [ ] Rework Entity Component implementation
+- [ ] Signals/Events components to allow systems to interact each other
 - [ ] Validate the Data Driven architecture
 - [ ] Improve inputs handling (system based)
 - [ ] Improve camera (zoom support)
